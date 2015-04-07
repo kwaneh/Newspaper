@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My Application</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="title_activity_sports">Sports</string>
+    <string name="title_activity_top_stories">TopStories</string>
+    <string name="title_activity_living_art">LivingArt</string>
+    <string name="title_activity_forum">Forum</string>
+    <string name="title_activity_web_app_interface">WebAppInterface</string>
+
+</resources>
