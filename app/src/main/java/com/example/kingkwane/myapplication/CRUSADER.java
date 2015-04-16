@@ -5,62 +5,62 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.webkit.JavascriptInterface;
+import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
 public class CRUSADER extends ActionBarActivity {
+    private String mUrl;
+    private WebView mWebView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //setRetainInstance(true);
+        //mUrl = getActivity().getIntent().getData().toString();
         setContentView(R.layout.activity_main);
+        mWebView = (WebView) findViewById(R.id.webview);
+        mWebView.loadUrl("https://www.susqu.edu/crusader/default.cfm?IssueID=288");
+
         TextView t = (TextView) findViewById(R.id.textView2);
         t.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Uri uri = Uri.parse("https://www.susqu.edu/crusader/section.cfm?IssueID=287&SectionID=1");
-                //Intent i = new Intent(CRUSADER.this, NewsActivity.class);
-                Intent i = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(i);
+    @Override
+    public void onClick(View v) {
+       Uri uri = Uri.parse("https://www.susqu.edu/crusader/section.cfm?IssueID=287&SectionID=1");
+       Intent i = new Intent(CRUSADER.this, NewsActivity.class);
+       startActivity(i);
 
             }
-        });
-        TextView y = (TextView) findViewById(R.id.textView3);
+     });
+     TextView y = (TextView) findViewById(R.id.textView3);
         y.setOnClickListener(new View.OnClickListener() {
-            @Override
+    @Override
             public void onClick(View v) {
-                Uri uri1 = Uri.parse("http://thesucrusader.com/?cat=4");
-                Intent j = new Intent(Intent.ACTION_VIEW, uri1);
+                Intent j = new Intent(CRUSADER.this, Sports.class);
                 startActivity(j);
 
             }
         });
         TextView h = (TextView) findViewById(R.id.textView4);
         h.setOnClickListener(new View.OnClickListener() {
-            @Override
+    @Override
             public void onClick(View v) {
                 Intent b = new Intent(CRUSADER.this, LivingArt.class);
                 startActivity(b);
 
             }
         });
-        TextView m = (TextView) findViewById(R.id.textView5);
-        m.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent s = new Intent(CRUSADER.this, TopStories.class);
-                startActivity(s);
 
-            }
-        });
         TextView z = (TextView) findViewById(R.id.textView6);
         z.setOnClickListener(new View.OnClickListener() {
-            @Override
+    @Override
             public void onClick(View v) {
                 Intent k = new Intent(CRUSADER.this, Forum.class);
                 startActivity(k);
@@ -70,6 +70,10 @@ public class CRUSADER extends ActionBarActivity {
 
     }
 
+    /*@Override
+    public View nCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState) {
+        //mWebView = (WebView)v.findViewById(R.id.webview);
+    }*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

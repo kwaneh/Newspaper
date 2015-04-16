@@ -7,13 +7,5 @@
     tools:context="com.example.kingkwane.myapplication.TopStories"
     android:background="#ffff0200">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Top Stories"
-        android:id="@+id/textView11"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="#ffc4b0ff" />
+
 </RelativeLayout>

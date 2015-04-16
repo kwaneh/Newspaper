@@ -6,15 +6,19 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.TextView;
 
 
 public class Sports extends ActionBarActivity {
+    private WebView mWebView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sports);
+        mWebView = (WebView) findViewById(R.id.webview);
+        mWebView.loadUrl("https://www.susqu.edu/crusader/section.cfm?IssueID=288&SectionID=5");
 
     }
 
