@@ -1,23 +1,21 @@
 package com.example.kingkwane.myapplication;
 
-import android.content.Context;
+
 import android.content.Intent;
-import android.net.Uri;
+
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
+
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.webkit.JavascriptInterface;
+
 import android.webkit.WebView;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 
 public class CRUSADER extends ActionBarActivity {
-    private String mUrl;
     private WebView mWebView;
 
     @Override
@@ -33,7 +31,6 @@ public class CRUSADER extends ActionBarActivity {
         t.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-       Uri uri = Uri.parse("https://www.susqu.edu/crusader/section.cfm?IssueID=287&SectionID=1");
        Intent i = new Intent(CRUSADER.this, NewsActivity.class);
        startActivity(i);
 

@@ -35,11 +35,11 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="News"
         android:id="@+id/textView22"
-        android:layout_below="@+id/textView9"
-        android:layout_toLeftOf="@+id/textView23"
-        android:layout_toStartOf="@+id/textView23"
-        android:layout_marginRight="36dp"
-        android:layout_marginEnd="36dp" />
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_alignTop="@+id/textView23"
+        android:layout_toLeftOf="@+id/textView9"
+        android:layout_toStartOf="@+id/textView9" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,11 +47,11 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Sports"
         android:id="@+id/textView23"
-        android:layout_above="@+id/webview"
-        android:layout_toLeftOf="@+id/textView25"
-        android:layout_toStartOf="@+id/textView25"
-        android:layout_marginRight="28dp"
-        android:layout_marginEnd="28dp" />
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_below="@+id/textView9"
+        android:layout_toRightOf="@+id/textView9"
+        android:layout_toEndOf="@+id/textView9" />
 
     <TextView
         android:layout_width="wrap_content"

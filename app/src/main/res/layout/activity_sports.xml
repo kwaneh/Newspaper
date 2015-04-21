@@ -33,10 +33,10 @@
         android:text="Living &amp; Arts"
         android:id="@+id/textView17"
         android:layout_below="@+id/textView18"
-        android:layout_alignRight="@+id/textView18"
-        android:layout_alignEnd="@+id/textView18"
-        android:layout_marginRight="14dp"
-        android:layout_marginEnd="14dp" />
+        android:layout_toLeftOf="@+id/textView18"
+        android:layout_toStartOf="@+id/textView18"
+        android:layout_marginRight="28dp"
+        android:layout_marginEnd="28dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -44,11 +44,11 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Main"
         android:id="@+id/textView19"
-        android:layout_marginRight="40dp"
-        android:layout_marginEnd="40dp"
         android:layout_alignTop="@+id/textView17"
-        android:layout_toLeftOf="@+id/textView17"
-        android:layout_toStartOf="@+id/textView17" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -56,11 +56,11 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="News"
         android:id="@+id/textView20"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:layout_above="@+id/webview"
         android:layout_toRightOf="@+id/textView18"
-        android:layout_toEndOf="@+id/textView18"
-        android:layout_marginLeft="15dp"
-        android:layout_marginStart="15dp" />
+        android:layout_toEndOf="@+id/textView18" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -68,11 +68,11 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Forum"
         android:id="@+id/textView21"
+        android:layout_marginRight="42dp"
+        android:layout_marginEnd="42dp"
         android:layout_alignTop="@+id/textView20"
         android:layout_alignRight="@+id/webview"
-        android:layout_alignEnd="@+id/webview"
-        android:layout_marginRight="14dp"
-        android:layout_marginEnd="14dp" />
+        android:layout_alignEnd="@+id/webview" />
     WebView myWebView = (WebView) findViewById(R.id.webview);
     WebSettings webSettings = myWebView.getSettings();
     webSettings.setJavaScriptEnabled(true);

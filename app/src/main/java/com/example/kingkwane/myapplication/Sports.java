@@ -20,7 +20,45 @@ public class Sports extends ActionBarActivity {
         mWebView = (WebView) findViewById(R.id.webview);
         mWebView.loadUrl("https://www.susqu.edu/crusader/section.cfm?IssueID=288&SectionID=5");
 
+        TextView t = (TextView) findViewById(R.id.textView19);
+        t.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Sports.this, CRUSADER.class);
+                startActivity(i);
+
+            }
+        });
+        TextView y = (TextView) findViewById(R.id.textView17);
+        y.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent j = new Intent(Sports.this, LivingArt.class);
+                startActivity(j);
+
+            }
+        });
+        TextView h = (TextView) findViewById(R.id.textView20);
+        h.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent b = new Intent(Sports.this, NewsActivity.class);
+                startActivity(b);
+
+            }
+        });
+
+        TextView z = (TextView) findViewById(R.id.textView21);
+        z.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent k = new Intent(Sports.this, Forum.class);
+                startActivity(k);
+
+            }
+        });
     }
+
 
 
     @Override
